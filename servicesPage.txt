@@ -1,0 +1,217 @@
+import '../flutter_flow/flutter_flow_theme.dart';
+import '../flutter_flow/flutter_flow_util.dart';
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+class ServicesPageWidget extends StatefulWidget {
+  const ServicesPageWidget({Key? key}) : super(key: key);
+
+  @override
+  _ServicesPageWidgetState createState() => _ServicesPageWidgetState();
+}
+
+class _ServicesPageWidgetState extends State<ServicesPageWidget> {
+  final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      key: scaffoldKey,
+      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      body: SafeArea(
+        child: GestureDetector(
+          onTap: () => FocusScope.of(context).unfocus(),
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              Align(
+                alignment: AlignmentDirectional(-1, -1),
+                child: Image.asset(
+                  'assets/images/Picture1.png',
+                  width: 400,
+                  height: 80,
+                  fit: BoxFit.fill,
+                ),
+              ),
+              SingleChildScrollView(
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Text(
+                      'الخدمات',
+                      style: FlutterFlowTheme.of(context).title1.override(
+                            fontFamily: 'Work Sans',
+                            fontSize: 30,
+                            fontWeight: FontWeight.w500,
+                          ),
+                    ),
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 40, 0, 0),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Container(
+                            width: 100,
+                            height: 100,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.rectangle,
+                            ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Icon(
+                                  Icons.person_search_sharp,
+                                  color: Color(0xFF544564),
+                                  size: 100,
+                                ),
+                                Text(
+                                  'استشارة خبير',
+                                  style: FlutterFlowTheme.of(context).title2,
+                                ),
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 50, 0, 0),
+                            child: Container(
+                              width: 100,
+                              height: 100,
+                              decoration: BoxDecoration(),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  FaIcon(
+                                    FontAwesomeIcons.handsHelping,
+                                    color: Color(0xFF544564),
+                                    size: 80,
+                                  ),
+                                  Text(
+                                    'فرص تطوعية',
+                                    style: FlutterFlowTheme.of(context).title2,
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 50, 0, 0),
+                            child: Container(
+                              width: 100,
+                              height: 100,
+                              decoration: BoxDecoration(),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Icon(
+                                    Icons.group_add_rounded,
+                                    color: Color(0xFF544564),
+                                    size: 100,
+                                  ),
+                                  Text(
+                                    'الإنضمام لفريق',
+                                    textAlign: TextAlign.center,
+                                    style: FlutterFlowTheme.of(context).title2,
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 240, 0, 0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Stack(
+                            children: [
+                              Image.asset(
+                                'assets/images/low1.png',
+                                width: 400,
+                                height: 50,
+                                fit: BoxFit.cover,
+                              ),
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        20, 5, 5, 5),
+                                    child: Icon(
+                                      Icons.home,
+                                      color: FlutterFlowTheme.of(context)
+                                          .lineColor,
+                                      size: 40,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        40, 0, 0, 0),
+                                    child: InkWell(
+                                      onTap: () async {
+                                        context.pushNamed('favourites');
+                                      },
+                                      child: Icon(
+                                        Icons.favorite_sharp,
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryBtnText,
+                                        size: 40,
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        45, 0, 0, 0),
+                                    child: Icon(
+                                      Icons.add_circle_outline_sharp,
+                                      color: Colors.black,
+                                      size: 40,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        30, 0, 0, 0),
+                                    child: InkWell(
+                                      onTap: () async {
+                                        context.pushNamed('chat');
+                                      },
+                                      child: Icon(
+                                        Icons.chat_bubble_outline,
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryBtnText,
+                                        size: 40,
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        40, 0, 0, 0),
+                                    child: Icon(
+                                      Icons.person,
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryBtnText,
+                                      size: 40,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
