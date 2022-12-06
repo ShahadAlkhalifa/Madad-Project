@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:madad_project/interests.dart';
+import 'package:madad_project/log_in.dart';
 
 import 'create_account.dart';
 
@@ -24,7 +25,7 @@ class RegisterScreen extends StatelessWidget {
           ),
           const Align(
             alignment: AlignmentDirectional(-0.03, -0.51),
-            child: Text("بخدمتكم لمساعدتكم",
+            child: Text("لتكاتف الجهود التقنية",
                 style: TextStyle(
                   fontSize: 30,
                   color: Colors.black,
@@ -92,7 +93,7 @@ class RegisterScreen extends StatelessWidget {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => InterestsPage()));
+                                    builder: (context) => Login()));
                           },
                           style: ButtonStyle(
                               shape: MaterialStateProperty.all<
