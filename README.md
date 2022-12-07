@@ -1,16 +1,8 @@
-# madad_project
+# Madad (مَدَد)
 
-A new Flutter project.
+Madad is a content-based recommender system that connects tech experts with researchers in the technical field. Madad provides three important features:
+- Specialized technical consulting
+- Technical volunteer opportunities in exchange for credit points
+- Specialized technical communities
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The prototype application has been designed and can be accessed through this [link](https://www.figma.com/proto/GAud46wtuOVKL8uPN3OZNA/%D9%85%D9%8E%D8%AF%D9%8E%D8%AF?node-id=180%3A3602&scaling=scale-down&page-id=0%3A1&starting-point-node-id=180%3A3554).
