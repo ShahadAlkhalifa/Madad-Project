@@ -1,4 +1,4 @@
-# Madad (مَدَد)💜
+# Madad (مَدَد)
 
 Madad is a content-based recommender system that connects tech experts with researchers in the technical field. Madad provides three important features:
 - Specialized technical consulting
