@@ -5,4 +5,7 @@ Madad is a content-based recommender system that connects tech experts with rese
 - Technical volunteer opportunities in exchange for credit points
 - Specialized technical communities
 
+<img width="269" alt="Screenshot+2022-12-08+033454_c2" src="https://user-images.githubusercontent.com/95241727/206442260-448e59c1-1cc4-4948-a1cd-8a65ec631e82.png">
+
+
 The prototype application has been designed and can be accessed through this [link](https://www.figma.com/proto/GAud46wtuOVKL8uPN3OZNA/%D9%85%D9%8E%D8%AF%D9%8E%D8%AF?node-id=180%3A3602&scaling=scale-down&page-id=0%3A1&starting-point-node-id=180%3A3554).
